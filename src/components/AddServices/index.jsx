@@ -1,12 +1,16 @@
 import React from 'react';
-import s from './style.module.sass'
+import { addService } from '../../store/reducer/serviceReducer';
+import s from './style.module.sass';
+import { useDispatch } from 'react-redux';
 
 export default function AddServices() {
 
+    const dispatch = useDispatch();
+    
     const submit = event => {
         event.preventDefault();
         const { title_services } = event.target;
-        console.log(title_services.value);
+        dispatch(addService({title: title_services.value}));
         title_services.value = '';
     }
 
