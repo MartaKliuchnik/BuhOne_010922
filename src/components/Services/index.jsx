@@ -1,7 +1,8 @@
 import React from 'react';
 import ServicesCard from '../ServicesCard';
 import { data } from './data';
-import s from './style.module.sass'
+import s from './style.module.sass';
+import AddServices from '../AddServices'
 
 export default function Services() {
 
@@ -13,7 +14,9 @@ export default function Services() {
                 <div className={s.cards_container}>
                     {
                         data.map(el =>
-                            <ServicesCard key={el.id} {...el} />)}
+                            <ServicesCard key={el.id} {...el} />)
+                    }
+                    <AddServices/>
                 </div>
             </div>
         </section>

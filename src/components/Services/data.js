@@ -23,10 +23,10 @@ export const data = [
         id: 5,
         title: 'Бухгалтерское обслуживание',
         img: 'https://celes.club/uploads/posts/2022-05/thumbs/1653334858_3-celes-club-p-bukhgalteriya-fon-krasivie-3.jpg'
-    },
-    {
-        id: 6,
-        title: 'Бухгалтерское обслуживание',
-        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrcpnSsx2S-vTTEoq6VV_6yo5vNtzFv943BR-FNvLFYtF1iw7QhdkqYv55jZyD9SrxIUw&usqp=CAU'
     }
+    // {
+    //     id: 6,
+    //     title: 'Бухгалтерское обслуживание',
+    //     img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrcpnSsx2S-vTTEoq6VV_6yo5vNtzFv943BR-FNvLFYtF1iw7QhdkqYv55jZyD9SrxIUw&usqp=CAU'
+    // }
 ]

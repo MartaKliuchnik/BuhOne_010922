@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 import s from './style.module.sass';
 import logo from './media/buh_one_logo.png'
 
