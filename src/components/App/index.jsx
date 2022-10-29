@@ -3,8 +3,8 @@ import '../../style.sass'
 import Services from "../Services";
 import AboutUs from "../AboutUs";
 import Contacts from "../Contacts";
-import Reviews from '../Reviews';
 import Footer from "../Footer";
+import ReviewsContainer from "../ReviewsContainer";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <NavBar />
       <Services />
       <AboutUs />
-      <Reviews/>
+      <ReviewsContainer/>
       <Contacts />
       <Footer/>
     </div>
