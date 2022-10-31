@@ -2,17 +2,31 @@ import { review } from '../../components/ReviewsContainer/data';
 
 const defaultState = review;
 
-const DISPLAY_NEXT_REVIEW = 'DISPLAY_NEXT_REVIEW';
+const SCROLL_FORWARD_ACTION = 'SCROLL_FORWARD_ACTION';
 const ADD_NEW_REVIEW = 'ADD_NEW_REVIEW';
 
-export const dispayNextReview = (payload) => ({ type: DISPLAY_NEXT_REVIEW, payload });
+export const scrollForwardAction = (payload) => ({ type: SCROLL_FORWARD_ACTION, payload });
 export const addNewReview = (payload) => ({ type: ADD_NEW_REVIEW, payload });
 
 export const reviewReducer = (state = defaultState, action) => {
-    if (action.type === DISPLAY_NEXT_REVIEW) {
-        return state.map(el => (el.id === action.payload)
-            ? el.display = true
-            : el.display = false)
+    
+    if (action.type === SCROLL_FORWARD_ACTION) {
+        return state.map(el =>
+        {
+            console.log(state)
+            
+            if (el.id === action.payload) {
+                console.log(el.display);
+                el.display = true;
+                console.log(el)
+            } 
+            console.log(el);
+            console.log(state)
+            return el
+            
+        }
+            
+        )
     } else if(action.type === ADD_NEW_REVIEW){
         return [...state,
             {

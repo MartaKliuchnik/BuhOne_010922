@@ -2,7 +2,7 @@ import React from 'react';
 import s from './style.module.sass';
 
 export default function Reviews({ text, avatar, name, position, display }) {
-    console.log(avatar)
+    
     return (
     <div>
             {

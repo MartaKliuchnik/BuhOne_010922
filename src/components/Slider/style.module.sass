@@ -5,14 +5,12 @@
     &>.slider_btn
         font-size: 60px
         color: #71a6cc
-        &:active
+        &>.left_btn:hover
+            cursor: pointer
+            color: #005FA3
+        &>.right_btn:hover
+            cursor: pointer
             color: #005FA3
     &>.slider_circle
-        width: 10px
-        height: 10px
-        border: 1px solid #71a6cc
-        border-radius: 50%
-        background-color: #71a6cc
-        &:active
-            border: 1px solid #005FA3
-            background-color: #005FA3
+        display: flex
+        gap: 10px
